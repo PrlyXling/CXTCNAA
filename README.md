@@ -1,6 +1,6 @@
 # CXTCNAA
 ## 楚雄师范学院校园网自动认证脚本
-openwrt/linux 校园网自动认证脚本
+openwrt/linux 校园网自动认证/登录脚本
 ## 使用方法
 1. 准备一台支持刷入openwrt/linux的路由器(可以去网上搜索刷机方法，本人测试所用为红米AC2100)
 2. 刷入适合当前设备的openwrt系统(测试所用为BleachWrt)
