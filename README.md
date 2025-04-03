@@ -8,7 +8,7 @@ openwrt/linux 校园网自动认证脚本
 5. 从仓库下载neo_script.sh,使用文本编辑器在脚本中的username和password中分别填入你的认证用户名和密码
 6. 在openwrt管理页面 系统>文件传输中上传脚本，将脚本移动至合适目录(以下以根目录为例,参考`mv /tmp/upload/neo_script.sh /`)
 7. 为脚本添加执行权限 chmod +x 你脚本的位置(参考`chmod 777 /neo_script.sh`)
-8. 在openwrt管理界面中 系统>启动项>本地启动脚本,在exit 0前填入脚本路径(我这里为/neo_script.sh >> /tmp/auth.log &)
+8. 在openwrt管理界面中 系统>启动项>本地启动脚本,在exit 0前填入脚本路径(我这里为`/neo_script.sh >> /tmp/auth.log &`)
 ## 登出说明
 1. 此脚本一般不需要登出，如果需要登出功能，可以通过获取输出日志中认证成功返回的paramstr值进行登出
 2. 上一条的操作流程：使用ssh或ttyd登录到openwrt，执行`source /neo_script.sh && logout 你的paramStr值`
