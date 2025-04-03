@@ -17,8 +17,14 @@ openwrt/linux 校园网自动认证脚本
 2. 也可以通过一台能上网的设备直接通过原本界面认证后在网上下载bash.ipk，然后该设备连接至路由器，通过管理界面上传文件并直接安装
 ## 其他
 * 校园网登录界面
+  ![image](https://github.com/PrlyXling/CXTCNAA/blob/main/img/img1.png)
 * 修改登录脚本中的账号密码
+  ![image](https://github.com/PrlyXling/CXTCNAA/blob/main/img/img2.png)
 * 上传脚本文件
+  ![image](https://github.com/PrlyXling/CXTCNAA/blob/main/img/img3.png)
 * 脚本文件位置
+  ![image](https://github.com/PrlyXling/CXTCNAA/blob/main/img/img4.png)
 * 启动项修改
+  ![image](https://github.com/PrlyXling/CXTCNAA/blob/main/img/img5.png)
 * 认证成功的日志
+  ![image](https://github.com/PrlyXling/CXTCNAA/blob/main/img/img6.png)
