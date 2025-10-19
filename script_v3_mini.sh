@@ -20,7 +20,8 @@ function login() {
             response=$(curl -Ls -w "%{url_effective}" -X POST "$auth_url/authServlet" --data-urlencode "paramStr=$paramstr" --data-urlencode "UserName=$username" --data-urlencode "PassWord=$password")
             if [[ "$response" == *"logon.jsp"* ]];then
                 #
-                #ntpd -S /usr/sbin/ntpd-hotplug -p ntp1.could.aliyuncs.com
+                # ntpd -S /usr/sbin/ntpd-hotplug -p ntp1.aliyun.com
+                # sleep 3
                 #
                 log "Auth Pass" "paramstr=$paramstr"
                 return 0;
@@ -33,7 +34,8 @@ function login() {
         return -2;
     fi
     #
-    #ntpd -S /usr/sbin/ntpd-hotplug -p ntp1.could.aliyuncs.com
+    # ntpd -S /usr/sbin/ntpd-hotplug -p ntp1.aliyun.com
+    # sleep 3
     #
     log Pass
     return 1;
