@@ -19,10 +19,6 @@ function login() {
             paramstr=$(urldecode "$(curl -Ls "$redirect_url" | sed -n 's/.*paramStr=\([^"]*\).*/\1/p')")
             response=$(curl -Ls -w "%{url_effective}" -X POST "$auth_url/authServlet" --data-urlencode "paramStr=$paramstr" --data-urlencode "UserName=$username" --data-urlencode "PassWord=$password")
             if [[ "$response" == *"logon.jsp"* ]];then
-                #
-                # ntpd -S /usr/sbin/ntpd-hotplug -p ntp1.aliyun.com
-                # sleep 3
-                #
                 log "Auth Pass" "paramstr=$paramstr"
                 return 0;
             fi
@@ -33,10 +29,6 @@ function login() {
         log Fail
         return -2;
     fi
-    #
-    # ntpd -S /usr/sbin/ntpd-hotplug -p ntp1.aliyun.com
-    # sleep 3
-    #
     log Pass
     return 1;
 }
